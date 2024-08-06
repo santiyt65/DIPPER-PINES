@@ -103,8 +103,8 @@ ciudad = 'Lima'
 let menu = `\`¡HOLA!\` 👋🏻 • @${m.sender.replace(/@.+/, '')}\n${fantasy}${conn.user.jid == global.conn.user.jid ? '' : `\n║˚₊·˚₊· ͟͟͞͞➳* 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝑺𝒖𝒃 𝑩𝒐𝒕 ⇢ wa.me/+${global.conn.user.jid.split`@`[0]}`}
 
 > ├┈‧͙⁺˚*･༓☾　®　☽༓･*˚⁺‧͙ 
-> ├┈ 𝒃𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 
-> ├┈ *Canal oficial:* https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43 
+> ├┈ SANTIYT65 
+> ├┈ *Canal oficial:* https://whatsapp.com/channel/0029VakEHYw3LdQOoDMxce2b
     *Fecha y hora*
 > ┣ 𝙵𝙴𝙲𝙷𝙰 𝚈 𝙷𝙾𝚁𝙰: \`${formatDate}\`
 > ┣ 𝙿𝙰𝙸𝚂: \`${nombreLugar}\`

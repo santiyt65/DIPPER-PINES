@@ -32,7 +32,7 @@ export default handler*/
   const document = doc[Math.floor(Math.random() * doc.length)];
   const texto = `¡HOLA! 👋🏻`.trim();
   const texto2 = {
-    'document': {url: `https://github.com/Wilsmac/FantasyBot-MD-v1`},
+    'document': {url: `https://github.com/santiyt65/DIPPER-PINES`},
     'mimetype': `application/${document}`,
     'fileName': `¡Hola!`,
     'fileLength': 999999,
@@ -41,13 +41,13 @@ export default handler*/
       'forwardingScore': 40,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/Wilsmac/FantasyBot-MD-v1',
+        'mediaUrl': 'https://github.com/santiyt65/DIPPER-PINES',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': fantasy,
         'body': wm,
         'thumbnail': fs.readFileSync("./media/menus/Menu1.jpg"),
-        'sourceUrl': 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'}},
+        'sourceUrl': 'https://whatsapp.com/channel/0029VakEHYw3LdQOoDMxce2b'}},
     'caption': texto,
     'footer': wm,
     'headerType': 6};

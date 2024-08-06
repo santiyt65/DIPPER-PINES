@@ -26,7 +26,7 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
     
     pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
     
-    git clone https://github.com/Wilsmac/FantasyBot-MD-v1
+    git clone https://github.com/santiyt65/DIPPER-PINES
     
     cd FantasyBot-MD-v1
     

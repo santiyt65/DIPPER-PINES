@@ -57,7 +57,7 @@ let old = performance.now()
 
 let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃➥ *CREADOR(A)*
-┃ღ *Wilmer ofc*
+┃ღ *SANTIYT65*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CONTACTO*
 ┃ღ *${ig}*
@@ -104,7 +104,7 @@ return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')}
 
 /*let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃➥ *CREADOR(A)*
-┃ღ *Wilmer ofc*
+┃ღ *SANTIYT65*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CONTACTO*
 ┃ღ *${ig}*
