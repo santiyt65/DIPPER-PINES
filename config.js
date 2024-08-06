@@ -113,7 +113,7 @@ global.author =  ` ├┈‧͙･༓☾ SANTIYT65 ☽༓･˚\n├┈⟴ 𝙶�
 //----------------------------------------------------------
 
 
-global.estilo2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "54 9 260 481-135454 9 260 481-1354-@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: fantasy, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "54 9 260 481-1354-@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: fantasy, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.textia = `ᴘᴏᴡʀᴇᴅ ʙʏ ᴡɪʟᴍᴇʀ`
 
 
@@ -151,7 +151,7 @@ global.paypal = 'https://paypal.me/'
 global.asistencia = 'https://atom.bio/nicolas_santiyt6' //Contacto
 global.bot = 'wa.me/'
 
-global.nna = 'https://www.atom.bio/Wilsmac/' // Cuentas
+global.nna = 'https://atom.bio/nicolas_santiyt6/' // Cuentas
 global.nn2 = 'https://t.me/' // 
 global.nna2 = '' //Anime y social 
 global.nn = '' // FantasyBot-MD 
