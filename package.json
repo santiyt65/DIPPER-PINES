@@ -1,5 +1,5 @@
 {
-"name": "NatsukiBot",
+"name": "DIPPER-BOT",
 "version": "1.8.0", 
 "description": "Super Bot WhatsApp",
 "main": "index.js",
@@ -17,16 +17,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
 
-"homepage": "https://github.com/Wilsmac/NatsukiBot",
+"homepage": "https://github.com/santiyt65/DIPPER-PINES",
 "author": {
-"name": "Wilsmac" },
+"name": "SANTIYT65" },
 
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Wilsmac/NatsukiBot.git" },
+"url": "git+https://github.com/santiyt65/DIPPER-PINES.git" },
 
 "bugs": {
-"url": "https://github.com/Wilsmac/NatsukiBot/issues" },
+"url": "" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@whiskeysockets/baileys": "npm:@whiskeysockets/baileys@6.7.2",
