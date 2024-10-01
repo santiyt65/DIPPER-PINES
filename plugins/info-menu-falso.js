@@ -699,9 +699,9 @@ let menu = `\`¡HOLA!\` 👋🏻 • @${m.sender.replace(/@.+/, '')}\n${fantasy}
 //await conn.sendFile(m.chat, fantasyImg, 'lp.jpg', menu, fake0, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩 ', previewType: 0, thumbnail: picture, sourceUrl: nn }}})
 //await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fake0)
 
-const natsuki = ['https://telegra.ph/file/fc75439751a71e3419c68.mp4',
-'https://telegra.ph/file/60222a8e88addd43523b7.mp4',
-'https://telegra.ph/file/efc37a04ba264b60ea1ec.mp4']
+const natsuki = ['https://t.me/c/2460699370/3',
+'https://t.me/c/2460699370/3',
+'https://t.me/c/2460699370/3']
 
 /*await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fake0 })*/
 
