@@ -996,6 +996,7 @@ if (!('antiDiscord' in chat)) chat.antiDiscord = false
 if (!('antiThreads' in chat)) chat.antiThreads = false
 if (!('antiTwitch' in chat)) chat.antiTwitch = false
 if (!('antifake' in chat)) chat.antifake = false
+if (!('antiBot' in chat))  chat.antiBot = false
 if (!('reaction' in chat)) chat.reaction = true    
 if (!('viewonce' in chat)) chat.viewonce = false       
 if (!('modoadmin' in chat)) chat.modoadmin = false    
@@ -1016,7 +1017,7 @@ sBye: '',
 sPromote: '',
 sDemote: '', 
 sCondition: JSON.stringify([{ grupo: { usuario: [], condicion: [], admin: '' }, prefijos: []}]), 
-delete: true,
+delete: false,
 modohorny: true,
 stickers: false,
 autosticker: false,
@@ -1035,6 +1036,7 @@ antiDiscord: false,
 antiThreads: false,
 antiTwitch: false,
 antifake: false,
+antiBot: false,
 reaction: true,
 viewonce: true,
 modoadmin: false,
@@ -1397,7 +1399,7 @@ if (settingsREAD.autoread2) await this.readMessages([m.key])
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 	    
 if (db.data.chats[m.chat].reaction && m.text.match(/(ción|dad|aje|oso|izar|mente|pero|tion|age|ous|ate|and|but|ify)/gi)) {
-let emot = pickRandom(["😀", "😃", "😄", "😁", "😆", "🥹", "😅", "😂", "🤣", "🥲", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗"])
+let emot = pickRandom(["😆", "🥹", "😅", "😂", "🤣", "🥲", "☺️", "😊", "😇", "🙂", "🙃", "😌", "😍", "✨", "🍃", "🧏🏻"])
 if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
 }
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}

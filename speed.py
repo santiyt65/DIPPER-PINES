@@ -27,7 +27,6 @@ import socket
 import sys
 import threading
 import timeit
-from tkinter.simpledialog import askstring
 import xml.parsers.expat
 
 try:
@@ -66,7 +65,7 @@ try:
     import json
 except ImportError:
     try:
-        import simplejson as json # type: ignore
+        import simplejson as json
     except ImportError:
         json = None
 
@@ -82,7 +81,7 @@ except ImportError:
     ET = None
 
 try:
-    from urllib2 import (urlopen, Request, HTTPError, URLError, # type: ignore
+    from urllib2 import (urlopen, Request, HTTPError, URLError,
                          AbstractHTTPHandler, ProxyHandler,
                          HTTPDefaultErrorHandler, HTTPRedirectHandler,
                          HTTPErrorProcessor, OpenerDirector)
@@ -93,12 +92,12 @@ except ImportError:
                                 HTTPErrorProcessor, OpenerDirector)
 
 try:
-    from httplib import HTTPConnection, BadStatusLine # type: ignore
+    from httplib import HTTPConnection, BadStatusLine
 except ImportError:
     from http.client import HTTPConnection, BadStatusLine
 
 try:
-    from httplib import HTTPSConnection # type: ignore
+    from httplib import HTTPSConnection
 except ImportError:
     try:
         from http.client import HTTPSConnection
@@ -106,22 +105,22 @@ except ImportError:
         HTTPSConnection = None
 
 try:
-    from httplib import FakeSocket # type: ignore
+    from httplib import FakeSocket
 except ImportError:
     FakeSocket = None
 
 try:
-    from Queue import Queue # type: ignore
+    from Queue import Queue
 except ImportError:
     from queue import Queue
 
 try:
-    from urlparse import urlparse # type: ignore
+    from urlparse import urlparse
 except ImportError:
     from urllib.parse import urlparse
 
 try:
-    from urlparse import parse_qs # type: ignore
+    from urlparse import parse_qs
 except ImportError:
     try:
         from urllib.parse import parse_qs
@@ -131,7 +130,7 @@ except ImportError:
 try:
     from hashlib import md5
 except ImportError:
-    from md5 import md5 # type: ignore
+    from md5 import md5
 
 try:
     from argparse import ArgumentParser as ArgParser
@@ -147,17 +146,17 @@ except ImportError:
     PARSER_TYPE_FLOAT = 'float'
 
 try:
-    from cStringIO import StringIO # type: ignore
+    from cStringIO import StringIO
     BytesIO = None
 except ImportError:
     try:
-        from StringIO import StringIO # type: ignore
+        from StringIO import StringIO
         BytesIO = None
     except ImportError:
         from io import StringIO, BytesIO
 
 try:
-    import __builtin__ # type: ignore
+    import __builtin__
 except ImportError:
     import builtins
     from io import TextIOWrapper, FileIO
@@ -221,12 +220,12 @@ else:
             return
 
         def write(data):
-            if not isinstance(data, askstring):
+            if not isinstance(data, basestring):
                 data = str(data)
             # If the file has an encoding, encode unicode with it.
             encoding = 'utf8'  # Always trust UTF-8 for output
-            if (isinstance(fp, file) and # type: ignore
-                    isinstance(data, encode) and # type: ignore
+            if (isinstance(fp, file) and
+                    isinstance(data, unicode) and
                     encoding is not None):
                 errors = getattr(fp, "errors", None)
                 if errors is None:
@@ -237,13 +236,13 @@ else:
         want_unicode = False
         sep = kwargs.pop("sep", None)
         if sep is not None:
-            if isinstance(sep, unicode): # type: ignore
+            if isinstance(sep, unicode):
                 want_unicode = True
             elif not isinstance(sep, str):
                 raise TypeError("sep must be None or a string")
         end = kwargs.pop("end", None)
         if end is not None:
-            if isinstance(end, unicode): # type: ignore
+            if isinstance(end, unicode):
                 want_unicode = True
             elif not isinstance(end, str):
                 raise TypeError("end must be None or a string")
@@ -251,12 +250,12 @@ else:
             raise TypeError("invalid keyword arguments to print()")
         if not want_unicode:
             for arg in args:
-                if isinstance(arg, unicode): # type: ignore
+                if isinstance(arg, unicode):
                     want_unicode = True
                     break
         if want_unicode:
-            newline = unicode("\n") # type: ignore
-            space = unicode(" ") # type: ignore
+            newline = unicode("\n")
+            space = unicode(" ")
         else:
             newline = "\n"
             space = " "

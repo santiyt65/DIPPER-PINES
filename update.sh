@@ -1,8 +1,8 @@
 # Código desarrollado por @+
   
 #!/data/data/com.termux/files/usr/bin/bash 
-BOT_DIR="DIPPER-PINES"  
-BOT_REPO="https://github.com/santiyt65/$BOT_DIR"
+BOT_DIR="NatsukiBot"  
+BOT_REPO="https://github.com/Wilsmac/$BOT_DIR"
 DB_FILE="database.json"
  
 GREEN='\033[32m'

@@ -5,11 +5,11 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN git clone https://github.com/santiyt65/DIPPER-PINES
+RUN git clone https://github.com/Wilsmac/NatsukiBot
 
-WORKDIR /root/DIPPER-PINES
+WORKDIR /root/NatsukiBot
 
-COPY ./root/DIPPER-PINES
+COPY ./root/NatsukiBot
 
 RUN yarn install
 
